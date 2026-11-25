@@ -1,0 +1,21 @@
+node_modules/
+.next/
+.env
+.env.local
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+build/
+.DS_Store
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+# Build files
+*.tsbuildinfo
+# Temporary page backups
+frontend/src/app/*.backup.tsx
+frontend/src/app/page.before-*.tsx
+frontend/src/app/page.company-explorer-backup.tsx

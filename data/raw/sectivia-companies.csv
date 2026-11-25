@@ -1,0 +1,383 @@
+id,ticker,name,exchange,country,sector,segment,listed,relations
+a,A,Agilent Technologies,NYSE,USA,medicin,Life science tools,true,1
+aapl,AAPL,Apple,NASDAQ,USA,ai,Devices & electronics manufacturing,true,20
+abbv,ABBV,AbbVie,NYSE,USA,medicin,Big pharma,true,4
+abt,ABT,Abbott Laboratories,NYSE,USA,medicin,Diagnostics,true,1
+acn,ACN,Accenture,NYSE,Ireland,ai,IT consultants & integrators,true,2
+adbe,ADBE,Adobe,NASDAQ,USA,ai,AI software & productivity,true,1
+adi,ADI,Analog Devices,NASDAQ,USA,ai,Chips & accelerators,true,1
+adsk,ADSK,Autodesk,NASDAQ,USA,ai,AI software & productivity,true,1
+aee,AEE,Ameren,NYSE,USA,energi,Utilities & power producers,true,2
+aep,AEP,American Electric Power,NASDAQ,USA,energi,Utilities & power producers,true,2
+aes,AES,AES,NYSE,USA,energi,Utilities & power producers,true,3
+akam,AKAM,Akamai Technologies,NASDAQ,USA,ai,Cloud platforms,true,2
+alab,ALAB,Astera Labs,NASDAQ,USA,ai,Data centers,true,1
+alb,ALB,Albemarle,NYSE,USA,raavarer,Mining & critical minerals,true,2
+alny,ALNY,Alnylam Pharmaceuticals,NASDAQ,USA,medicin,Biotech & innovation,true,2
+alsn,ALSN,Allison Transmission,NYSE,USA,elbil,Drivetrain & vehicle components,true,1
+amat,AMAT,Applied Materials,NASDAQ,USA,ai,Semiconductor equipment & IP,true,2
+amd,AMD,AMD,NASDAQ,USA,ai,Chips & accelerators,true,9
+amgn,AMGN,Amgen,NASDAQ,USA,medicin,Biotech & innovation,true,2
+amp,AMP,Ameriprise Financial,NYSE,USA,finans,Asset & alternative managers,true,1
+ampx,AMPX,Amprius Technologies,NYSE,USA,elbil,Battery cells & power chips,true,2
+amt,AMT,American Tower,NYSE,USA,ai,"Telecom, cable & towers",true,3
+amzn,AMZN,Amazon,NASDAQ,USA,ai,Cloud platforms,true,50
+anet,ANET,Arista Networks,NYSE,USA,ai,Data centers,true,3
+aos,AOS,A. O. Smith,NYSE,USA,industri,"Building products, HVAC & elevators",true,1
+apd,APD,Air Products,NYSE,USA,raavarer,Industrial gases & chemicals,true,1
+aph,APH,Amphenol,NYSE,USA,ai,Data centers,true,1
+apo,APO,Apollo Global,NYSE,USA,finans,Asset & alternative managers,true,2
+app,APP,AppLovin,NASDAQ,USA,ai,AI software & productivity,true,1
+ares,ARES,Ares Management,NYSE,USA,finans,Asset & alternative managers,true,1
+arm,ARM,Arm Holdings,NASDAQ,United Kingdom,ai,Chips & accelerators,true,6
+asts,ASTS,AST SpaceMobile,NASDAQ,USA,forsvar,Space industry & satellites,true,3
+ati,ATI,ATI,NYSE,USA,raavarer,Steel & specialty metals,true,3
+ato,ATO,Atmos Energy,NYSE,USA,energi,Utilities & power producers,true,2
+avav,AVAV,AeroVironment,NASDAQ,USA,forsvar,Drones & autonomous systems,true,1
+avgo,AVGO,Broadcom,NASDAQ,USA,ai,Chips & accelerators,true,6
+axon,AXON,Axon Enterprise,NASDAQ,USA,forsvar,Dual-use technology,true,1
+axp,AXP,American Express,NYSE,USA,finans,Payment rails & networks,true,2
+azo,AZO,AutoZone,NYSE,USA,elbil,Parts retail & used cars,true,1
+bac,BAC,Bank of America,NYSE,USA,finans,Banks,true,4
+bah,BAH,Booz Allen Hamilton,NYSE,USA,forsvar,Communications & defense data,true,1
+bax,BAX,Baxter International,NYSE,USA,medicin,Medtech & devices,true,2
+bdx,BDX,Becton Dickinson,NYSE,USA,medicin,Medtech & devices,true,2
+be,BE,Bloom Energy,NYSE,USA,energi,Power equipment,true,3
+ben,BEN,Franklin Templeton,NYSE,USA,finans,Asset & alternative managers,true,2
+bkr,BKR,Baker Hughes,NASDAQ,USA,energi,Oilfield services & equipment,true,3
+blbd,BLBD,Blue Bird,NASDAQ,USA,industri,"Machinery, engines & locomotives",true,1
+blk,BLK,BlackRock,NYSE,USA,finans,Asset & alternative managers,true,6
+bmrn,BMRN,BioMarin Pharmaceutical,NASDAQ,USA,medicin,Biotech & innovation,true,1
+bmy,BMY,Bristol Myers Squibb,NYSE,USA,medicin,Big pharma,true,2
+bny,BNY,BNY,NYSE,USA,finans,Banks,true,4
+boeing,BA,Boeing,NYSE,USA,forsvar,Military platforms,true,17
+br,BR,Broadridge,NYSE,USA,finans,Exchanges & market data,true,3
+bwa,BWA,BorgWarner,NYSE,USA,elbil,Drivetrain & vehicle components,true,3
+bwxt,BWXT,BWX Technologies,NYSE,USA,energi,Nuclear energy & uranium,true,1
+bx,BX,Blackstone,NYSE,USA,finans,Asset & alternative managers,true,2
+c,C,Citigroup,NYSE,USA,finans,Banks,true,2
+caci,CACI,CACI International,NYSE,USA,forsvar,Communications & defense data,true,1
+cah,CAH,Cardinal Health,NYSE,USA,medicin,Distribution & pharmacy infrastructure,true,7
+carr,CARR,Carrier Global,NYSE,USA,ai,"Cooling, power & data center infrastructure",true,1
+cat,CAT,Caterpillar,NYSE,USA,industri,"Machinery, engines & locomotives",true,9
+cboe,CBOE,Cboe Global Markets,Cboe BZX,USA,finans,Exchanges & market data,true,2
+cci,CCI,Crown Castle,NYSE,USA,ai,"Telecom, cable & towers",true,3
+cdns,CDNS,Cadence Design Systems,NASDAQ,USA,ai,Semiconductor equipment & IP,true,3
+cdw,CDW,CDW,NASDAQ,USA,ai,IT consultants & integrators,true,3
+ceg,CEG,Constellation Energy,NASDAQ,USA,energi,Utilities & power producers,true,2
+cf,CF,CF Industries,NYSE,USA,raavarer,Fertilizers,true,3
+chtr,CHTR,Charter Communications,NASDAQ,USA,ai,"Telecom, cable & towers",true,3
+ci,CI,Cigna,NYSE,USA,medicin,Distribution & pharmacy infrastructure,true,4
+cien,CIEN,Ciena,NYSE,USA,ai,Data centers,true,2
+clf,CLF,Cleveland-Cliffs,NYSE,USA,raavarer,Steel & specialty metals,true,2
+cmcsa,CMCSA,Comcast,NASDAQ,USA,ai,"Telecom, cable & towers",true,4
+cme,CME,CME Group,NASDAQ,USA,finans,Exchanges & market data,true,3
+cmi,CMI,Cummins,NYSE,USA,industri,"Machinery, engines & locomotives",true,4
+cms,CMS,CMS Energy,NYSE,USA,energi,Utilities & power producers,true,1
+cnc,CNC,Centene,NYSE,USA,medicin,Health insurers & care providers,true,1
+cnp,CNP,CenterPoint Energy,NYSE,USA,energi,Utilities & power producers,true,2
+cof,COF,Capital One,NYSE,USA,finans,Consumer lenders & card issuers,true,4
+cohr,COHR,Coherent,NYSE,USA,ai,Data centers,true,2
+coin,COIN,Coinbase,NASDAQ,USA,finans,Brokers & fintech,true,2
+cop,COP,ConocoPhillips,NYSE,USA,energi,Oil & gas production,true,3
+cor,COR,Cencora,NYSE,USA,medicin,Distribution & pharmacy infrastructure,true,10
+cpay,CPAY,Corpay,NYSE,USA,finans,Payment rails & networks,true,1
+crdo,CRDO,Credo Technology,NASDAQ,USA,ai,Data centers,true,1
+crm,CRM,Salesforce,NYSE,USA,ai,AI software & productivity,true,4
+crwd,CRWD,CrowdStrike,NASDAQ,USA,forsvar,"Identity, network & endpoint",true,1
+crwv,CRWV,CoreWeave,NASDAQ,USA,ai,Cloud platforms,true,6
+csco,CSCO,Cisco,NASDAQ,USA,ai,Data centers,true,1
+csx,CSX,CSX,NASDAQ,USA,industri,"Rail, parcel & freight",true,3
+ctsh,CTSH,Cognizant,NASDAQ,USA,ai,IT consultants & integrators,true,1
+cvlt,CVLT,Commvault Systems,NASDAQ,USA,forsvar,Detection & response,true,1
+cvs,CVS,CVS Health,NYSE,USA,medicin,Distribution & pharmacy infrastructure,true,4
+cvx,CVX,Chevron,NYSE,USA,energi,Oil & gas production,true,5
+cw,CW,Curtiss-Wright,NYSE,USA,energi,Nuclear energy & uranium,true,1
+d,D,Dominion Energy,NYSE,USA,energi,Utilities & power producers,true,3
+dan,DAN,Dana,NYSE,USA,elbil,Drivetrain & vehicle components,true,2
+dco,DCO,Ducommun,NYSE,USA,forsvar,"Radar, sensors & electronics",true,4
+dd,DD,DuPont,NYSE,USA,industri,Components & automation,true,1
+ddog,DDOG,Datadog,NASDAQ,USA,ai,"Data, analytics & enterprise AI",true,1
+de,DE,Deere,NYSE,USA,industri,"Machinery, engines & locomotives",true,2
+dell,DELL,Dell Technologies,NYSE,USA,ai,Data centers,true,6
+dgx,DGX,Quest Diagnostics,NYSE,USA,medicin,Diagnostics,true,1
+dhr,DHR,Danaher,NYSE,USA,medicin,Life science tools,true,1
+dlr,DLR,Digital Realty,NYSE,USA,ai,Data centers,true,8
+dow,DOW,Dow,NYSE,USA,raavarer,Industrial gases & chemicals,true,2
+drs,DRS,Leonardo DRS,NASDAQ,USA,forsvar,"Radar, sensors & electronics",true,1
+dte,DTE,DTE Energy,NYSE,USA,energi,Utilities & power producers,true,2
+duk,DUK,Duke Energy,NYSE,USA,energi,Utilities & power producers,true,5
+duol,DUOL,Duolingo,NASDAQ,USA,ai,AI software & productivity,true,1
+dva,DVA,DaVita,NYSE,USA,medicin,Health insurers & care providers,true,1
+dxcm,DXCM,DexCom,NASDAQ,USA,medicin,Diabetes & metabolic disease,true,1
+echo,ECHO,EchoStar,NASDAQ,USA,ai,"Telecom, cable & towers",true,3
+ed,ED,Consolidated Edison,NYSE,USA,energi,Utilities & power producers,true,1
+efx,EFX,Equifax,NYSE,USA,finans,Exchanges & market data,true,1
+eix,EIX,Edison International,NYSE,USA,energi,Utilities & power producers,true,1
+elv,ELV,Elevance Health,NYSE,USA,medicin,Health insurers & care providers,true,1
+enph,ENPH,Enphase Energy,NASDAQ,USA,energi,Solar & wind,true,2
+entg,ENTG,Entegris,NASDAQ,USA,ai,Semiconductor equipment & IP,true,1
+eqix,EQIX,Equinix,NASDAQ,USA,ai,Data centers,true,5
+eqt,EQT,EQT,NYSE,USA,energi,Oil & gas production,true,2
+es,ES,Eversource Energy,NYSE,USA,energi,Utilities & power producers,true,1
+estc,ESTC,Elastic,NYSE,USA,forsvar,Detection & response,true,3
+etn,ETN,Eaton,NYSE,USA,energi,Power equipment,true,1
+etr,ETR,Entergy,NYSE,USA,energi,Utilities & power producers,true,4
+evrg,EVRG,Evergy,NASDAQ,USA,energi,Utilities & power producers,true,2
+ew,EW,Edwards Lifesciences,NYSE,USA,medicin,Medtech & devices,true,1
+exc,EXC,Exelon,NASDAQ,USA,energi,Utilities & power producers,true,2
+exe,EXE,Expand Energy,NASDAQ,USA,energi,Oil & gas production,true,1
+f,F,Ford Motor,NYSE,USA,elbil,Automakers,true,9
+fang,FANG,Diamondback Energy,NASDAQ,USA,energi,Oil & gas production,true,1
+fcx,FCX,Freeport-McMoRan,NYSE,USA,raavarer,Mining & critical minerals,true,3
+fds,FDS,FactSet,NYSE,USA,finans,Exchanges & market data,true,1
+fdx,FDX,FedEx,NYSE,USA,industri,"Rail, parcel & freight",true,4
+fdxf,FDXF,FedEx Freight,NYSE,USA,industri,"Rail, parcel & freight",true,1
+fe,FE,FirstEnergy,NYSE,USA,energi,Utilities & power producers,true,1
+ferg,FERG,Ferguson Enterprises,NYSE,USA,industri,Distribution & rental,true,1
+ffiv,FFIV,F5,NASDAQ,USA,ai,Data centers,true,2
+fico,FICO,Fair Isaac,NYSE,USA,finans,Exchanges & market data,true,1
+fis,FIS,FIS,NYSE,USA,finans,Payment rails & networks,true,2
+fisv,FISV,Fiserv,NASDAQ,USA,finans,Payment rails & networks,true,2
+fitb,FITB,Fifth Third Bancorp,NASDAQ,USA,finans,Banks,true,1
+fix,FIX,Comfort Systems USA,NYSE,USA,ai,"Cooling, power & data center infrastructure",true,2
+flex,FLEX,Flex,NASDAQ,USA,ai,Devices & electronics manufacturing,true,5
+fly,FLY,Firefly Aerospace,NASDAQ,USA,forsvar,Space industry & satellites,true,2
+form,FORM,FormFactor,NASDAQ,USA,ai,Semiconductor equipment & IP,true,1
+fslr,FSLR,First Solar,NASDAQ,USA,energi,Solar & wind,true,1
+ftnt,FTNT,Fortinet,NASDAQ,USA,forsvar,"Identity, network & endpoint",true,2
+gd,GD,General Dynamics,NYSE,USA,forsvar,Defense integrators,true,5
+gddy,GDDY,GoDaddy,NYSE,USA,ai,Cloud platforms,true,3
+ge,GE,GE Aerospace,NYSE,USA,forsvar,Dual-use technology,true,7
+gehc,GEHC,GE HealthCare,NASDAQ,USA,medicin,Medtech & devices,true,1
+gen,GEN,Gen Digital,NASDAQ,USA,forsvar,"Identity, network & endpoint",true,1
+gev,GEV,GE Vernova,NYSE,USA,energi,Power equipment,true,7
+gild,GILD,Gilead Sciences,NASDAQ,USA,medicin,Biotech & innovation,true,4
+glw,GLW,Corning,NYSE,USA,ai,Data centers,true,7
+gm,GM,General Motors,NYSE,USA,elbil,Automakers,true,9
+gnrc,GNRC,Generac,NYSE,USA,energi,Power equipment,true,1
+gntx,GNTX,Gentex,NASDAQ,USA,elbil,Drivetrain & vehicle components,true,2
+googl,GOOGL,Alphabet,NASDAQ,USA,ai,Cloud platforms,true,32
+gpc,GPC,Genuine Parts,NYSE,USA,elbil,Parts retail & used cars,true,1
+gpn,GPN,Global Payments,NYSE,USA,finans,Payment rails & networks,true,1
+gs,GS,Goldman Sachs,NYSE,USA,finans,Investment banking & trading,true,5
+gsat,GSAT,Globalstar,NYSE American,USA,forsvar,Space industry & satellites,true,4
+gww,GWW,W. W. Grainger,NYSE,USA,industri,Distribution & rental,true,1
+hal,HAL,Halliburton,NYSE,USA,energi,Oilfield services & equipment,true,2
+hca,HCA,HCA Healthcare,NYSE,USA,medicin,Health insurers & care providers,true,1
+hei,HEI,HEICO,NYSE,USA,forsvar,Military platforms,true,1
+hii,HII,Huntington Ingalls Industries,NYSE,USA,forsvar,Military platforms,true,2
+hon,HON,Honeywell,NASDAQ,USA,forsvar,Dual-use technology,true,2
+hona,HONA,Honeywell Aerospace,NASDAQ,USA,forsvar,Military platforms,true,6
+hood,HOOD,Robinhood,NASDAQ,USA,finans,Brokers & fintech,true,4
+hpe,HPE,HPE,NYSE,USA,ai,Data centers,true,1
+hpq,HPQ,HP,NYSE,USA,ai,Devices & electronics manufacturing,true,3
+hum,HUM,Humana,NYSE,USA,medicin,Health insurers & care providers,true,1
+hwm,HWM,Howmet Aerospace,NYSE,USA,forsvar,Military platforms,true,4
+hxl,HXL,Hexcel,NYSE,USA,forsvar,Military platforms,true,7
+ibkr,IBKR,Interactive Brokers,NASDAQ,USA,finans,Brokers & fintech,true,2
+ibm,IBM,IBM,NYSE,USA,ai,IT consultants & integrators,true,3
+ice,ICE,Intercontinental Exchange,NYSE,USA,finans,Exchanges & market data,true,6
+idxx,IDXX,IDEXX Laboratories,NASDAQ,USA,medicin,Diagnostics,true,1
+ilmn,ILMN,Illumina,NASDAQ,USA,medicin,Life science tools,true,1
+incy,INCY,Incyte,NASDAQ,USA,medicin,Biotech & innovation,true,1
+intc,INTC,Intel,NASDAQ,USA,ai,Chips & accelerators,true,12
+intu,INTU,Intuit,NASDAQ,USA,ai,AI software & productivity,true,1
+iqv,IQV,IQVIA Holdings,NYSE,USA,medicin,"Data, software & clinical research",true,1
+irdm,IRDM,Iridium Communications,NASDAQ,USA,forsvar,Space industry & satellites,true,5
+isrg,ISRG,Intuitive Surgical,NASDAQ,USA,medicin,Medtech & devices,true,1
+itri,ITRI,Itron,NASDAQ,USA,energi,Grid & electrification,true,3
+ivz,IVZ,Invesco,NYSE,USA,finans,Asset & alternative managers,true,1
+j,J,Jacobs Solutions,NYSE,USA,industri,"Water, waste & services",true,1
+jbht,JBHT,J.B. Hunt,NASDAQ,USA,industri,"Rail, parcel & freight",true,1
+jbl,JBL,Jabil,NYSE,USA,ai,Devices & electronics manufacturing,true,3
+jci,JCI,Johnson Controls,NYSE,USA,industri,"Building products, HVAC & elevators",true,1
+jkhy,JKHY,Jack Henry & Associates,NASDAQ,USA,finans,Payment rails & networks,true,2
+jnj,JNJ,Johnson & Johnson,NYSE,USA,medicin,Big pharma,true,1
+jpm,JPM,JPMorgan Chase,NYSE,USA,finans,Banks,true,7
+kd,KD,Kyndryl,NYSE,USA,ai,IT consultants & integrators,true,1
+key,KEY,KeyCorp,NYSE,USA,finans,Regional banks,true,1
+keys,KEYS,Keysight Technologies,NYSE,USA,ai,Semiconductor equipment & IP,true,2
+kkr,KKR,KKR,NYSE,USA,finans,Asset & alternative managers,true,2
+klac,KLAC,KLA,NASDAQ,USA,ai,Semiconductor equipment & IP,true,1
+kmi,KMI,Kinder Morgan,NYSE,USA,energi,"Pipelines, processing & refining",true,1
+krmn,KRMN,Karman Space & Defense,NYSE,USA,forsvar,Missiles & ammunition,true,1
+ktos,KTOS,Kratos Defense,NASDAQ,USA,forsvar,Drones & autonomous systems,true,1
+lcid,LCID,Lucid Group,NASDAQ,USA,elbil,Automakers,true,2
+ldos,LDOS,Leidos,NYSE,USA,forsvar,Communications & defense data,true,3
+lea,LEA,Lear,NYSE,USA,elbil,Drivetrain & vehicle components,true,3
+leu,LEU,Centrus Energy,NYSE American,USA,energi,Nuclear energy & uranium,true,1
+lh,LH,Labcorp,NYSE,USA,medicin,Diagnostics,true,1
+lhx,LHX,L3Harris,NYSE,USA,forsvar,Defense integrators,true,5
+lii,LII,Lennox International,NYSE,USA,industri,"Building products, HVAC & elevators",true,1
+lin,LIN,Linde,NASDAQ,USA,raavarer,Industrial gases & chemicals,true,3
+lite,LITE,Lumentum,NASDAQ,USA,ai,Data centers,true,4
+lly,LLY,Eli Lilly,NYSE,USA,medicin,Diabetes & metabolic disease,true,5
+lmt,LMT,Lockheed Martin,NYSE,USA,forsvar,Defense integrators,true,15
+lnt,LNT,Alliant Energy,NASDAQ,USA,energi,Utilities & power producers,true,1
+lrcx,LRCX,Lam Research,NASDAQ,USA,ai,Semiconductor equipment & IP,true,2
+lunr,LUNR,Intuitive Machines,NASDAQ,USA,forsvar,Space industry & satellites,true,2
+ma,MA,Mastercard,NYSE,USA,finans,Payment rails & networks,true,9
+mas,MAS,Masco,NYSE,USA,industri,"Building products, HVAC & elevators",true,1
+mchp,MCHP,Microchip Technology,NASDAQ,USA,ai,Chips & accelerators,true,1
+mck,MCK,McKesson,NYSE,USA,medicin,Distribution & pharmacy infrastructure,true,9
+mco,MCO,Moody’s,NYSE,USA,finans,Exchanges & market data,true,1
+mdb,MDB,MongoDB,NASDAQ,USA,ai,"Data, analytics & enterprise AI",true,1
+mdt,MDT,Medtronic,NYSE,USA,medicin,Medtech & devices,true,1
+meta,META,Meta Platforms,NASDAQ,USA,ai,AI software & productivity,true,18
+mlm,MLM,Martin Marietta Materials,NYSE,USA,raavarer,Construction materials & coatings,true,1
+mmm,MMM,3M,NYSE,USA,industri,Components & automation,true,4
+mod,MOD,Modine Manufacturing,NYSE,USA,ai,"Cooling, power & data center infrastructure",true,3
+mog,MOG.A,Moog,NYSE,USA,forsvar,Military platforms,true,3
+mos,MOS,Mosaic,NYSE,USA,raavarer,Fertilizers,true,2
+mp,MP,MP Materials,NYSE,USA,raavarer,Mining & critical minerals,true,2
+mpwr,MPWR,Monolithic Power,NASDAQ,USA,ai,Chips & accelerators,true,1
+mrcy,MRCY,Mercury Systems,NASDAQ,USA,forsvar,"Radar, sensors & electronics",true,7
+mrk,MRK,Merck & Co.,NYSE,USA,medicin,Big pharma,true,2
+mrna,MRNA,Moderna,NASDAQ,USA,medicin,Biotech & innovation,true,1
+mrvl,MRVL,Marvell,NASDAQ,USA,ai,Chips & accelerators,true,2
+ms,MS,Morgan Stanley,NYSE,USA,finans,Investment banking & trading,true,2
+msci,MSCI,MSCI,NYSE,USA,finans,Exchanges & market data,true,1
+msft,MSFT,Microsoft,NASDAQ,USA,ai,Cloud platforms,true,33
+msi,MSI,Motorola Solutions,NYSE,USA,forsvar,Dual-use technology,true,1
+mtz,MTZ,MasTec,NYSE,USA,energi,Grid & electrification,true,1
+mu,MU,Micron,NASDAQ,USA,ai,Chips & accelerators,true,4
+nbix,NBIX,Neurocrine Biosciences,NASDAQ,USA,medicin,Biotech & innovation,true,1
+ncno,NCNO,nCino,NASDAQ,USA,finans,Brokers & fintech,true,4
+ndaq,NDAQ,Nasdaq,NASDAQ,USA,finans,Exchanges & market data,true,3
+nee,NEE,NextEra Energy,NYSE,USA,energi,Utilities & power producers,true,6
+nem,NEM,Newmont,NYSE,USA,raavarer,Mining & critical minerals,true,2
+net,NET,Cloudflare,NYSE,USA,forsvar,"Identity, network & endpoint",true,1
+ni,NI,NiSource,NYSE,USA,energi,Utilities & power producers,true,2
+noc,NOC,Northrop Grumman,NYSE,USA,forsvar,Defense integrators,true,8
+now,NOW,ServiceNow,NYSE,USA,ai,AI software & productivity,true,1
+nrg,NRG,NRG Energy,NYSE,USA,energi,Utilities & power producers,true,2
+nsc,NSC,Norfolk Southern,NYSE,USA,industri,"Rail, parcel & freight",true,2
+ntap,NTAP,NetApp,NASDAQ,USA,ai,Data centers,true,2
+ntra,NTRA,Natera,NASDAQ,USA,medicin,Diagnostics,true,2
+ntrs,NTRS,Northern Trust,NASDAQ,USA,finans,Banks,true,1
+nue,NUE,Nucor,NYSE,USA,raavarer,Steel & specialty metals,true,4
+nvda,NVDA,Nvidia,NASDAQ,USA,ai,Chips & accelerators,true,29
+nxt,NXT,Nextpower,NASDAQ,USA,energi,Solar & wind,true,1
+oke,OKE,Oneok,NYSE,USA,energi,"Pipelines, processing & refining",true,2
+oklo,OKLO,Oklo,NYSE,USA,energi,Nuclear energy & uranium,true,2
+okta,OKTA,Okta,NASDAQ,USA,forsvar,"Identity, network & endpoint",true,1
+oln,OLN,Olin,NYSE,USA,raavarer,Industrial gases & chemicals,true,1
+on,ON,ON Semiconductor,NASDAQ,USA,elbil,Battery cells & power chips,true,2
+orcl,ORCL,Oracle,NYSE,USA,ai,Cloud platforms,true,7
+oxy,OXY,Occidental Petroleum,NYSE,USA,energi,Oil & gas production,true,3
+p,P,Everpure,NYSE,USA,ai,Data centers,true,1
+panw,PANW,Palo Alto Networks,NASDAQ,USA,forsvar,"Identity, network & endpoint",true,1
+pcar,PCAR,Paccar,NASDAQ,USA,industri,"Machinery, engines & locomotives",true,5
+pcg,PCG,PG&E,NYSE,USA,energi,Utilities & power producers,true,1
+pfe,PFE,Pfizer,NYSE,USA,medicin,Big pharma,true,5
+ph,PH,Parker Hannifin,NYSE,USA,industri,Components & automation,true,3
+pltr,PLTR,Palantir,NASDAQ,USA,ai,"Data, analytics & enterprise AI",true,4
+pnc,PNC,PNC Financial,NYSE,USA,finans,Banks,true,1
+pnw,PNW,Pinnacle West Capital,NYSE,USA,energi,Utilities & power producers,true,1
+podd,PODD,Insulet,NASDAQ,USA,medicin,Diabetes & metabolic disease,true,4
+ppl,PPL,PPL,NYSE,USA,energi,Utilities & power producers,true,1
+psx,PSX,Phillips 66,NYSE,USA,energi,"Pipelines, processing & refining",true,1
+ptc,PTC,PTC,NASDAQ,USA,ai,AI software & productivity,true,1
+pwr,PWR,Quanta Services,NYSE,USA,energi,Grid & electrification,true,7
+pypl,PYPL,PayPal,NASDAQ,USA,finans,Payment rails & networks,true,3
+q,Q,Qnity Electronics,NYSE,USA,ai,Semiconductor equipment & IP,true,1
+qcom,QCOM,Qualcomm,NASDAQ,USA,ai,Chips & accelerators,true,6
+qlys,QLYS,Qualys,NASDAQ,USA,forsvar,Detection & response,true,2
+qs,QS,QuantumScape,NASDAQ,USA,elbil,Battery cells & power chips,true,1
+rbc,RBC,RBC Bearings,NYSE,USA,industri,Components & automation,true,1
+rbrk,RBRK,Rubrik,NYSE,USA,forsvar,Detection & response,true,1
+rddt,RDDT,Reddit,NYSE,USA,ai,AI software & productivity,true,3
+regn,REGN,Regeneron,NASDAQ,USA,medicin,Biotech & innovation,true,3
+rivn,RIVN,Rivian Automotive,NASDAQ,USA,elbil,Automakers,true,2
+rjf,RJF,Raymond James Financial,NYSE,USA,finans,Brokers & fintech,true,1
+rklb,RKLB,Rocket Lab,NASDAQ,USA,forsvar,Space industry & satellites,true,1
+rok,ROK,Rockwell Automation,NYSE,USA,energi,Power equipment,true,1
+rop,ROP,Roper Technologies,NASDAQ,USA,industri,Components & automation,true,2
+rpd,RPD,Rapid7,NASDAQ,USA,forsvar,Detection & response,true,1
+rsg,RSG,Republic Services,NYSE,USA,industri,"Water, waste & services",true,1
+rtx,RTX,RTX,NYSE,USA,forsvar,Defense integrators,true,11
+run,RUN,Sunrun,NASDAQ,USA,energi,Solar & wind,true,2
+rvty,RVTY,Revvity,NYSE,USA,medicin,Life science tools,true,1
+s,S,SentinelOne,NYSE,USA,forsvar,"Identity, network & endpoint",true,1
+sail,SAIL,SailPoint,NASDAQ,USA,forsvar,"Identity, network & endpoint",true,1
+sbac,SBAC,SBA Communications,NASDAQ,USA,ai,"Telecom, cable & towers",true,3
+schw,SCHW,Charles Schwab,NYSE,USA,finans,Brokers & fintech,true,4
+shw,SHW,Sherwin-Williams,NYSE,USA,raavarer,Construction materials & coatings,true,1
+slb,SLB,SLB,NYSE,USA,energi,Oilfield services & equipment,true,1
+smci,SMCI,Super Micro,NASDAQ,USA,ai,Data centers,true,2
+smr,SMR,NuScale Power,NYSE,USA,energi,Nuclear energy & uranium,true,2
+snow,SNOW,Snowflake,NYSE,USA,ai,"Data, analytics & enterprise AI",true,2
+snps,SNPS,Synopsys,NASDAQ,USA,ai,Semiconductor equipment & IP,true,2
+so,SO,Southern Company,NYSE,USA,energi,Utilities & power producers,true,1
+solv,SOLV,Solventum,NYSE,USA,medicin,Medtech & devices,true,2
+spacex,,SpaceX,,USA,forsvar,Space industry & satellites,false,5
+spgi,SPGI,S&P Global,NYSE,USA,finans,Exchanges & market data,true,6
+sre,SRE,Sempra,NYSE,USA,energi,Utilities & power producers,true,3
+ssnc,SSNC,SS&C Technologies,NASDAQ,USA,finans,Exchanges & market data,true,3
+ste,STE,Steris,NYSE,USA,medicin,Medtech & devices,true,1
+stld,STLD,Steel Dynamics,NASDAQ,USA,raavarer,Steel & specialty metals,true,2
+stt,STT,State Street,NYSE,USA,finans,Banks,true,5
+swks,SWKS,Skyworks Solutions,NASDAQ,USA,ai,Chips & accelerators,true,2
+syf,SYF,Synchrony Financial,NYSE,USA,finans,Consumer lenders & card issuers,true,4
+t,T,AT&T,NYSE,USA,ai,"Telecom, cable & towers",true,9
+tdc,TDC,Teradata,NYSE,USA,ai,"Data, analytics & enterprise AI",true,3
+tdg,TDG,TransDigm Group,NYSE,USA,forsvar,Dual-use technology,true,1
+tdy,TDY,Teledyne Technologies,NYSE,USA,forsvar,Dual-use technology,true,3
+tech,TECH,Bio-Techne,NASDAQ,USA,medicin,Life science tools,true,1
+tenb,TENB,Tenable,NASDAQ,USA,forsvar,Detection & response,true,2
+ter,TER,Teradyne,NASDAQ,USA,ai,Semiconductor equipment & IP,true,1
+tfc,TFC,Truist Financial,NYSE,USA,finans,Regional banks,true,1
+tln,TLN,Talen Energy,NASDAQ,USA,energi,Utilities & power producers,true,1
+tmo,TMO,Thermo Fisher Scientific,NYSE,USA,medicin,Life science tools,true,5
+tmus,TMUS,T-Mobile US,NASDAQ,USA,ai,"Telecom, cable & towers",true,6
+tpl,TPL,Texas Pacific Land,NYSE,USA,energi,Oil & gas production,true,1
+trgp,TRGP,Targa Resources,NYSE,USA,energi,"Pipelines, processing & refining",true,2
+trmb,TRMB,Trimble,NASDAQ,USA,ai,AI software & productivity,true,2
+trow,TROW,T. Rowe Price,NASDAQ,USA,finans,Asset & alternative managers,true,2
+tru,TRU,TransUnion,NYSE,USA,finans,Exchanges & market data,true,2
+tsla,TSLA,Tesla,NASDAQ,USA,elbil,Automakers,true,7
+tt,TT,Trane Technologies,NYSE,USA,industri,"Building products, HVAC & elevators",true,2
+twlo,TWLO,Twilio,NYSE,USA,ai,AI software & productivity,true,1
+txn,TXN,Texas Instruments,NASDAQ,USA,ai,Chips & accelerators,true,1
+txt,TXT,Textron,NYSE,USA,forsvar,Military platforms,true,5
+tyl,TYL,Tyler Technologies,NYSE,USA,ai,AI software & productivity,true,1
+uhs,UHS,Universal Health Services,NYSE,USA,medicin,Health insurers & care providers,true,1
+unh,UNH,UnitedHealth,NYSE,USA,medicin,Distribution & pharmacy infrastructure,true,2
+unp,UNP,Union Pacific,NYSE,USA,industri,"Rail, parcel & freight",true,3
+ups,UPS,United Parcel Service,NYSE,USA,industri,"Rail, parcel & freight",true,5
+usar,USAR,USA Rare Earth,NASDAQ,USA,raavarer,Mining & critical minerals,true,1
+usb,USB,U.S. Bancorp,NYSE,USA,finans,Banks,true,3
+uthr,UTHR,United Therapeutics,NASDAQ,USA,medicin,Biotech & innovation,true,2
+v,V,Visa,NYSE,USA,finans,Payment rails & networks,true,11
+vc,VC,Visteon,NASDAQ,USA,elbil,Drivetrain & vehicle components,true,2
+veev,VEEV,Veeva Systems,NYSE,USA,medicin,"Data, software & clinical research",true,4
+virt,VIRT,Virtu Financial,NYSE,USA,finans,Investment banking & trading,true,2
+vlto,VLTO,Veralto,NYSE,USA,industri,"Water, waste & services",true,1
+vmc,VMC,Vulcan Materials,NYSE,USA,raavarer,Construction materials & coatings,true,1
+vrns,VRNS,Varonis Systems,NASDAQ,USA,forsvar,"Identity, network & endpoint",true,1
+vrsn,VRSN,Verisign,NASDAQ,USA,ai,Cloud platforms,true,1
+vrt,VRT,Vertiv,NYSE,USA,ai,"Cooling, power & data center infrastructure",true,1
+vrtx,VRTX,Vertex Pharmaceuticals,NASDAQ,USA,medicin,Biotech & innovation,true,2
+vsat,VSAT,Viasat,NASDAQ,USA,forsvar,Space industry & satellites,true,4
+vst,VST,Vistra,NYSE,USA,energi,Utilities & power producers,true,4
+vtrs,VTRS,Viatris,NASDAQ,USA,medicin,Big pharma,true,1
+vz,VZ,Verizon,NYSE,USA,ai,"Telecom, cable & towers",true,9
+wab,WAB,Wabtec,NYSE,USA,industri,"Machinery, engines & locomotives",true,3
+wat,WAT,Waters,NYSE,USA,medicin,Life science tools,true,1
+wday,WDAY,Workday,NASDAQ,USA,ai,AI software & productivity,true,1
+wec,WEC,WEC Energy Group,NYSE,USA,energi,Utilities & power producers,true,1
+wfc,WFC,Wells Fargo,NYSE,USA,finans,Banks,true,2
+wm,WM,Waste Management,NYSE,USA,industri,"Water, waste & services",true,1
+wmb,WMB,Williams Companies,NYSE,USA,energi,"Pipelines, processing & refining",true,2
+wolf,WOLF,Wolfspeed,NYSE,USA,elbil,Battery cells & power chips,true,2
+wso,WSO,Watsco,NYSE,USA,industri,Distribution & rental,true,2
+wst,WST,West Pharmaceutical Services,NYSE,USA,medicin,CDMO & pharma manufacturing,true,1
+wwd,WWD,Woodward,NASDAQ,USA,forsvar,Military platforms,true,7
+xel,XEL,Xcel Energy,NASDAQ,USA,energi,Utilities & power producers,true,4
+xom,XOM,ExxonMobil,NYSE,USA,energi,Oil & gas production,true,7
+xyz,XYZ,Block,NYSE,USA,finans,Brokers & fintech,true,2
+zbra,ZBRA,Zebra Technologies,NASDAQ,USA,industri,Components & automation,true,2
+zion,ZION,Zions Bancorporation,NASDAQ,USA,finans,Regional banks,true,1
+zs,ZS,Zscaler,NASDAQ,USA,forsvar,"Identity, network & endpoint",true,1
+zts,ZTS,Zoetis,NYSE,USA,medicin,Big pharma,true,1
