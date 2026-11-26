@@ -10,6 +10,7 @@ import { ReactFlow,
   type Edge
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
+import { loadDataset, buildGraph, buildSyntheticGraph, calculateStructuralRisk, propagateDisruption, analyzeDependencies, analyzeImpact, type Graph as SupplyGraph, type SupplyChainDataset } from "../lib/analysis";
 import {
   Activity, Network, AlertTriangle, ShieldCheck,
   Globe2, RefreshCw
@@ -178,6 +179,9 @@ type ImpactResult = {
 };
 
 export default function Home() {
+  const [localDataset, setLocalDataset] = useState<SupplyChainDataset | null>(null);
+  const [localGraph, setLocalGraph] = useState<SupplyGraph | null>(null);
+
   const [activeWorkspace, setActiveWorkspace] = useState<
     "overview" | "companies" | "risk" | "dependencies" | "impact" | "history"
   >("overview");
@@ -224,25 +228,18 @@ export default function Home() {
       setImpactError("");
       setImpactData(null);
 
-      const response = await fetch("/api/v1/sectivia/impact-analysis", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          source_id: selectedEntity.id,
-          severity: impactSeverity,
-          depth: Number(impactDepth)
-        })
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.detail || "Impact analysis failed");
+      if (!localGraph) {
+        throw new Error("Supply-chain graph is not loaded yet.");
       }
 
-      setImpactData(data);
+      const result = analyzeImpact(
+        localGraph,
+        selectedEntity.id,
+        impactSeverity,
+        Number(impactDepth)
+      );
+
+      setImpactData(result);
     } catch (err) {
       setImpactError(
         err instanceof Error ? err.message : "Unable to run impact analysis"
@@ -252,7 +249,6 @@ export default function Home() {
     }
   }
 
-
   async function exploreDependencies() {
     if (!selectedEntity || datasetMode !== "sectivia") return;
 
@@ -261,19 +257,18 @@ export default function Home() {
       setDependencyError("");
       setDependencyData(null);
 
-      const companyId = encodeURIComponent(selectedEntity.id);
-      const url =
-        `/api/v1/sectivia/company/${companyId}/dependencies` +
-        `?direction=${dependencyDirection}&depth=${dependencyDepth}`;
-
-      const response = await fetch(url);
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.detail || "Dependency analysis failed");
+      if (!localGraph) {
+        throw new Error("Supply-chain graph is not loaded yet.");
       }
 
-      setDependencyData(data);
+      const result = analyzeDependencies(
+        localGraph,
+        selectedEntity.id,
+        dependencyDirection,
+        Number(dependencyDepth)
+      );
+
+      setDependencyData(result);
     } catch (error) {
       setDependencyError(
         error instanceof Error ? error.message : "Dependency analysis failed"
@@ -285,34 +280,11 @@ export default function Home() {
 
   async function loadSimulationHistory() {
     try {
-      const response = await fetch("/api/v1/simulation-history");
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error("Could not load simulation history");
-      }
-
-      setSimulationHistory(
-        (data.history || []).map((item: {
-          id: number;
-          source_entity: string;
-          initial_severity: number;
-          total_affected: number;
-          affected_entities: AffectedEntity[];
-          created_at: string;
-        }) => ({
-          id: item.id,
-          source_entity: item.source_entity,
-          initial_severity: item.initial_severity,
-          total_affected: item.total_affected,
-          high_risk: item.affected_entities.filter((entity) => entity.risk_level === "High").length,
-          medium_risk: item.affected_entities.filter((entity) => entity.risk_level === "Medium").length,
-          low_risk: item.affected_entities.filter((entity) => entity.risk_level === "Low").length,
-          timestamp: item.created_at,
-        }))
-      );
+      const saved = localStorage.getItem("atmograph-simulation-history");
+      setSimulationHistory(saved ? JSON.parse(saved) : []);
     } catch (error) {
-      console.error("Could not load database history:", error);
+      console.error("Could not load local simulation history:", error);
+      setSimulationHistory([]);
     }
   }
 
@@ -325,19 +297,8 @@ export default function Home() {
 
   async function clearSimulationHistory() {
     if (!window.confirm("Are you sure you want to clear all simulation history?")) return;
-
-    try {
-      const response = await fetch("/api/v1/simulation-history", {
-        method: "DELETE",
-      });
-
-      if (!response.ok) throw new Error("Could not clear history");
-
-      setSimulationHistory([]);
-    } catch (error) {
-      console.error("Could not clear history:", error);
-      alert("Unable to clear simulation history.");
-    }
+    localStorage.removeItem("atmograph-simulation-history");
+    setSimulationHistory([]);
   }
 
   async function runSimulation() {
@@ -345,24 +306,30 @@ export default function Home() {
       setSimLoading(true);
       setSimError("");
 
-      const response = await fetch("/api/v1/simulate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          source_id: sourceId,
-          severity: severity
-        })
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.detail || "Simulation failed");
+      if (!localGraph) {
+        throw new Error("Supply-chain graph is not loaded yet.");
       }
 
-      setSimulation(data);
-      await loadSimulationHistory();
+      const result = propagateDisruption(localGraph, sourceId, severity);
+      setSimulation(result);
 
+      const historyItem: SimulationHistoryItem = {
+        id: Date.now(),
+        source_entity: result.source_entity,
+        initial_severity: result.initial_severity,
+        total_affected: result.total_affected,
+        high_risk: result.affected_entities.filter(e => e.risk_level === "High").length,
+        medium_risk: result.affected_entities.filter(e => e.risk_level === "Medium").length,
+        low_risk: result.affected_entities.filter(e => e.risk_level === "Low").length,
+        timestamp: new Date().toISOString()
+      };
+
+      const saved = localStorage.getItem("atmograph-simulation-history");
+      const previous: SimulationHistoryItem[] = saved ? JSON.parse(saved) : [];
+      const updated = [historyItem, ...previous].slice(0, 50);
+
+      localStorage.setItem("atmograph-simulation-history", JSON.stringify(updated));
+      setSimulationHistory(updated);
     } catch (err) {
       setSimError(err instanceof Error ? err.message : "Simulation failed");
     } finally {
@@ -377,73 +344,62 @@ export default function Home() {
       setSimulation(null);
 
       if (mode === "sectivia") {
-        const response = await fetch("/api/v1/sectivia/graph");
-        if (!response.ok) throw new Error("Sectivia dataset request failed");
-
-        const graphData = await response.json();
-
         setRiskLoading(true);
         setRiskError("");
 
         try {
-          const riskResponse = await fetch("/api/v1/sectivia/risk-analysis");
+          const dataset = await loadDataset();
+          const graph = buildGraph(dataset);
+          const riskResult = calculateStructuralRisk(graph);
 
-          if (!riskResponse.ok) {
-            throw new Error("Risk analysis request failed");
-          }
-
-          const riskResult = await riskResponse.json();
+          setLocalDataset(dataset);
+          setLocalGraph(graph);
           setRiskData(riskResult);
-        } catch (riskFetchError) {
-          setRiskData(null);
-          setRiskError(
-            riskFetchError instanceof Error
-              ? riskFetchError.message
-              : "Could not load risk analysis"
-          );
+          setOverview(null);
+          setEvents([]);
+
+          setNodes(dataset.companies.map((company) => ({
+            id: company.id,
+            name: company.name,
+            ticker: company.ticker ?? "",
+            type: company.segment ?? company.sector ?? "Company",
+            sector: company.sector ?? "Unknown",
+            country: company.country ?? "Unknown"
+          })));
+
+          setEdges(graph.relationships.map((relationship) => ({
+            source: relationship.supplier,
+            target: relationship.customer
+          })));
         } finally {
           setRiskLoading(false);
         }
-
-        setOverview(null);
-        setEvents([]);
-        setNodes(
-          (graphData.nodes ?? []).map((node: {
-            id: string;
-            name: string;
-            ticker?: string;
-            type?: string;
-            sector?: string;
-            country?: string;
-          }) => ({
-            id: node.id,
-            name: node.name,
-            ticker: node.ticker ?? "",
-            type: node.type ?? node.sector ?? "Company",
-            sector: node.sector ?? node.type ?? "Unknown",
-            country: node.country ?? "Unknown"
-          }))
-        );
-        setEdges(graphData.edges ?? []);
       } else {
-        const [overviewResponse, eventResponse, graphResponse] = await Promise.all([
-          fetch("/api/v1/overview"),
-          fetch("/api/v1/disruptions"),
-          fetch("/api/v1/graph")
-        ]);
-
-        if (!overviewResponse.ok || !eventResponse.ok || !graphResponse.ok) {
-          throw new Error("Synthetic dataset request failed");
-        }
-
-        const overviewData = await overviewResponse.json();
-        const eventData = await eventResponse.json();
-        const graphData = await graphResponse.json();
-
-        setOverview(overviewData);
-        setEvents(eventData.disruptions ?? []);
-        setNodes(graphData.nodes ?? []);
-        setEdges(graphData.edges ?? []);
+        const graph = buildSyntheticGraph();
+        setLocalGraph(graph);
+        setLocalDataset(null);
+        setRiskData(null);
+        setOverview({
+          total_entities: graph.companies.size,
+          total_connections: graph.relationships.length,
+          active_disruptions: 0,
+          high_risk_entities: 0,
+          average_risk: 0,
+          data_type: "synthetic_demo"
+        });
+        setEvents([]);
+        setNodes(Array.from(graph.companies.values()).map(company => ({
+          id: company.id,
+          name: company.name,
+          ticker: company.ticker,
+          type: company.segment,
+          sector: company.sector,
+          country: company.country
+        })));
+        setEdges(graph.relationships.map(r => ({
+          source: r.supplier,
+          target: r.customer
+        })));
       }
     } catch (error) {
       console.error("Dataset loading failed:", error);
