@@ -129,3 +129,5 @@ Interested in engineering applications, data analytics, intelligent systems, and
 ⭐ If you find this project interesting, consider starring the repository!
 
 **AtmoGraph — Explore Connections. Understand Risk. Predict Ripple Effects.**
+
+<!-- Project maintenance: November 27, 2026 -->
