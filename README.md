@@ -131,3 +131,17 @@ Interested in engineering applications, data analytics, intelligent systems, and
 **AtmoGraph — Explore Connections. Understand Risk. Predict Ripple Effects.**
 
 <!-- Project maintenance: November 27, 2026 -->
+
+## System Capabilities
+
+- Visualize supplier and customer relationships through an interactive network graph.
+- Identify structurally important companies and supply-chain dependencies.
+- Simulate supplier disruptions and examine their potential ripple effects.
+- Analyze affected companies and network vulnerability.
+- Compare disruption scenarios using heuristic structural risk indicators.
+- Review analysis results to understand potential supply-chain impacts.
+
+## Analysis Limitations
+
+AtmoGraph uses documented company relationships and heuristic network indicators. Its results are scenario-based estimates, not verified real-time supply-chain activity, actual purchase volumes, or guaranteed disruption probabilities.
+
